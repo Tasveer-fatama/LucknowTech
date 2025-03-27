@@ -48,7 +48,7 @@ export default function MarketingForm() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://hook.eu2.make.com/ilw1pnibxprrp7myykfsy1ikekvuwvo7",
+        "https://hook.eu2.make.com/g3fn11og5ddgs8ycr3n53jb9vhw4xnci",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

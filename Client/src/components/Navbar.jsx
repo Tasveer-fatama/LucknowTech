@@ -38,7 +38,7 @@ const Navbar = () => {
           <img
             src={isScrolled ? logowhite : logowhite}
             alt="Logo"
-            className="h-24"
+            className="h-20"
           />
          </Link>
 
