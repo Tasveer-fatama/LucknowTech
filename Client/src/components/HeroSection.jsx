@@ -134,8 +134,7 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 w-full sm:w-auto px-4 sm:px-0">
-        
-        
+          {/* Empty button container - you can add primary buttons here if needed */}
         </div>
 
         {/* Stats Bar */}
@@ -143,8 +142,6 @@ const HeroSection = () => {
   ref={statsRef}
   className="w-auto sm:max-w-sm md:max-w-4xl gap-2 sm:gap-4 text-center bg-black/40 backdrop-blur-md p-3 sm:p-4 md:p-6 rounded-xl border border-[#FFD74B]/20 mx-4 sm:mx-0 mt-60 relative"
 >
-
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
             {[
               { value: "200+", label: "Happy Clients" },
@@ -160,7 +157,23 @@ const HeroSection = () => {
           </div>
         </div>
 
-       
+        {/* Contact Us and Learn More Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+          <Link
+            to="/contact"
+            ref={el => buttonRefs.current.push(el)}
+            className="px-6 py-3 bg-[#FFD74B] hover:bg-[#FFC000] text-black font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2"
+          >
+            Contact Us <FaArrowRight className="text-sm" />
+          </Link>
+          <Link
+            to="/about"
+            ref={el => buttonRefs.current.push(el)}
+            className="px-6 py-3 bg-transparent hover:bg-white/10 border-2 border-white/30 text-white font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2"
+          >
+            Learn More <FaPlay className="text-sm" />
+          </Link>
+        </div>
       </div>
     </section>
   );
