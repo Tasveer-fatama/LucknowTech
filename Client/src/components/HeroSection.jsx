@@ -137,28 +137,10 @@ const HeroSection = () => {
           {/* Empty button container - you can add primary buttons here if needed */}
         </div>
 
-        {/* Stats Bar */}
-        <div 
-  ref={statsRef}
-  className="w-auto sm:max-w-sm md:max-w-4xl gap-2 sm:gap-4 text-center bg-black/40 backdrop-blur-md p-3 sm:p-4 md:p-6 rounded-xl border border-[#FFD74B]/20 mx-4 sm:mx-0 mt-60 relative"
->
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
-            {[
-              { value: "200+", label: "Happy Clients" },
-              { value: "95%", label: "Success Rate" },
-              { value: "50+", label: "Industries" },
-              { value: "24/7", label: "Dedicated Support" },
-            ].map((stat, index) => (
-              <div key={index} className="px-1 sm:px-2 py-2 sm:py-4">
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FFD74B]">{stat.value}</p>
-                <p className="text-[10px] xs:text-xs sm:text-sm uppercase tracking-wider text-gray-300 mt-1 sm:mt-2">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+      
 
         {/* Contact Us and Learn More Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+        <div className="flex flex-col sm:flex-row gap-4 mt-20 relative">
           <Link
             to="/contact"
             ref={el => buttonRefs.current.push(el)}
