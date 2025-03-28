@@ -117,7 +117,7 @@ const HeroSection = () => {
         {/* Main Heading */}
         <h1
           ref={headingRef}
-          className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-4 sm:mb-6 max-w-4xl md:max-w-5xl lg:max-w-6xl leading-tight px-2"
+          className="text-4xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-bold text-center mb-4 sm:mb-6 max-w-4xl md:max-w-5xl lg:max-w-6xl leading-tight px-2"
         >
           <span className="text-white">Elevating </span>
           <span className="text-[#FFD74B]">Lucknow Businesses</span>
@@ -140,9 +140,11 @@ const HeroSection = () => {
 
         {/* Stats Bar */}
         <div 
-          ref={statsRef}
-          className="w-full max-w-xs sm:max-w-sm md:max-w-4xl gap-2 sm:gap-4 text-center bg-black/40 backdrop-blur-md p-3 sm:p-4 md:p-6 rounded-xl border border-[#FFD74B]/20 mx-4 sm:mx-0"
-        >
+  ref={statsRef}
+  className="w-auto sm:max-w-sm md:max-w-4xl gap-2 sm:gap-4 text-center bg-black/40 backdrop-blur-md p-3 sm:p-4 md:p-6 rounded-xl border border-[#FFD74B]/20 mx-4 sm:mx-0 mt-60 relative"
+>
+
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
             {[
               { value: "200+", label: "Happy Clients" },
