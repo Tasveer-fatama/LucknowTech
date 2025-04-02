@@ -20,15 +20,15 @@ const LetsTalk = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
           <div className="flex items-center gap-3">
             <FaPhoneAlt className="text-[#f5a623]" />
-            <span>+91 522 4079XXX</span>
+            <span>+917080403322</span>
           </div>
           <div className="flex items-center gap-3">
             <FaMapMarkerAlt className="text-[#f5a623]" />
-            <span>Tech Park, Gomti Nagar</span>
+            <span> 1st Floor LHPS Building, Sector-7, Vikas Nagar, Lucknow-226022</span>
           </div>
           <div className="flex items-center gap-3">
             <FaEnvelope className="text-[#f5a623]" />
-            <span>hello@lucknowtech.com</span>
+            <span>lucknowtech1001@gmail.com</span>
           </div>
         </div>
       </div>
