@@ -221,12 +221,12 @@ const AboutUs = () => {
     <div className="mt-12 md:mt-16 text-center">
       <button className="relative inline-flex items-center px-6 py-2 sm:px-8 sm:py-3 overflow-hidden text-base sm:text-lg font-medium text-yellow-400 border-2 border-yellow-400 rounded-full group hover:text-gray-900">
         <span className="absolute left-0 block w-full h-0 transition-all bg-yellow-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-300 ease"></span>
-        <a href="/career"  className="relative flex items-center">
+        <Link  to="/career" className="relative flex items-center">
           Join Our Team
           <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
           </svg>
-        </a> 
+        </Link> 
       </button>
     </div>
   </div>
